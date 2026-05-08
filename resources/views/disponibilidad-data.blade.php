@@ -72,13 +72,20 @@
     </div>
     
 </div>
-
+@include('calculos-plan')
+<script>
+@push('extra_hides')
+if($('#fill_enganche').get_number() == 0 && $('#per_plazo').get_number() == 0){
+    console.log('fill_enganche', $('#fill_enganche').get_number());
+    console.log('per_plazo', $('#per_plazo').get_number());
+    $('#plan-div-personalized').hide();
+}
+@endpush
+</script>
 <div id="plans" style="@if(empty($unit)) display:none; @endif background-color: #681a0e;">
     <h1 style="text-align: center; padding-top: 36px; color:#967754; font-weight: 500; font-size: 2.5rem !important;" >POLÍTICAS DE PAGO</h1>
     @include("full-listing-template::plans")
 </div>
-
-@include('calculos-plan')
 
 @if(isset($imp))
 @include('listing-utils::ImageMapPro.multi-image-map-pro',['imp'=>$imp])

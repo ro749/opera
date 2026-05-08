@@ -15,8 +15,9 @@
         changed_personal();
     });
     $(document).on('personalized_plan_changed', function (e, final_price) {
-        @if($unit)
+        @if(!isset($menu))
         $('#fill_enganche').data('flag',true);
+
         @endif
         var interes_mensual = $('#fill_interes_mensual').get_number() / 100;
         var mensualidades_plazo = $('#fill_months_plazo').get_number();
@@ -120,5 +121,9 @@
       const root = Math.sqrt(b**2+4*a*value_normalized);
       return (-b+root)/(2*a)
     }
+    
 </script>
+@endpush
+@push('hide_personal')
+    $('#discount_1').hide();
 @endpush

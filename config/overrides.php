@@ -29,4 +29,5 @@ return [
         'unavailable' => 'unavailable',
     ],
     'image_map_pro' => App\ImageMapPro\ImageMapPro::class,
+    'plans'=>\App\Plans\Plans::class,
 ];
