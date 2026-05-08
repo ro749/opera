@@ -78,6 +78,8 @@
 if($('#fill_enganche').get_number() == 0 && $('#per_plazo').get_number() == 0){
     $('#plan-div-personalized').hide();
 }
+$('#interes_mensual').hide();
+$('#meses_sin_intereses').hide();
 @endpush
 </script>
 <div id="plans" style="@if(empty($unit)) display:none; @endif background-color: #681a0e;">
