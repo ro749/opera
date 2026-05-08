@@ -76,8 +76,6 @@
 <script>
 @push('extra_hides')
 if($('#fill_enganche').get_number() == 0 && $('#per_plazo').get_number() == 0){
-    console.log('fill_enganche', $('#fill_enganche').get_number());
-    console.log('per_plazo', $('#per_plazo').get_number());
     $('#plan-div-personalized').hide();
 }
 @endpush
