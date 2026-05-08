@@ -188,68 +188,46 @@
             </a>
         </div>
         <div class="col-md-4 col-sm-6 col-12 item facilities">
-            <a href="{{ image('galeria/13.jpg') }}" class="image-popup d-block hover">
+            <a href="{{ image('galeria/19.jpg') }}" class="image-popup d-block hover">
                 <div class="relative overflow-hidden rounded-1">
                     <div class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3">
                         View
                     </div>
                     <div class="absolute start-0 w-100 h-100 overlay-dark-7 hover-op-1 z-2"></div>
-                    <img src="{{ image('galeria/13.jpg') }}" class="w-100 hover-scale-1-2" alt="">
+                    <img src="{{ image('galeria/19.jpg') }}" class="w-100 hover-scale-1-2" alt="">
                 </div>
             </a>
         </div>
         <div class="col-md-4 col-sm-6 col-12 item facilities">
-            <a href="{{ image('galeria/14.jpg') }}" class="image-popup d-block hover">
+            <a href="{{ image('galeria/20.jpg') }}" class="image-popup d-block hover">
                 <div class="relative overflow-hidden rounded-1">
                     <div class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3">
                         View
                     </div>
                     <div class="absolute start-0 w-100 h-100 overlay-dark-7 hover-op-1 z-2"></div>
-                    <img src="{{ image('galeria/14.jpg') }}" class="w-100 hover-scale-1-2" alt="">
+                    <img src="{{ image('galeria/20.jpg') }}" class="w-100 hover-scale-1-2" alt="">
                 </div>
             </a>
         </div>
         <div class="col-md-4 col-sm-6 col-12 item facilities">
-            <a href="{{ image('galeria/15.jpg') }}" class="image-popup d-block hover">
+            <a href="{{ image('galeria/21.jpg') }}" class="image-popup d-block hover">
                 <div class="relative overflow-hidden rounded-1">
                     <div class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3">
                         View
                     </div>
                     <div class="absolute start-0 w-100 h-100 overlay-dark-7 hover-op-1 z-2"></div>
-                    <img src="{{ image('galeria/15.jpg') }}" class="w-100 hover-scale-1-2" alt="">
+                    <img src="{{ image('galeria/21.jpg') }}" class="w-100 hover-scale-1-2" alt="">
                 </div>
             </a>
         </div>
         <div class="col-md-4 col-sm-6 col-12 item facilities">
-            <a href="{{ image('galeria/16.jpg') }}" class="image-popup d-block hover">
+            <a href="{{ image('galeria/22.jpg') }}" class="image-popup d-block hover">
                 <div class="relative overflow-hidden rounded-1">
                     <div class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3">
                         View
                     </div>
                     <div class="absolute start-0 w-100 h-100 overlay-dark-7 hover-op-1 z-2"></div>
-                    <img src="{{ image('galeria/16.jpg') }}" class="w-100 hover-scale-1-2" alt="">
-                </div>
-            </a>
-        </div>
-        <div class="col-md-4 col-sm-6 col-12 item facilities">
-            <a href="{{ image('galeria/17.jpg') }}" class="image-popup d-block hover">
-                <div class="relative overflow-hidden rounded-1">
-                    <div class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3">
-                        View
-                    </div>
-                    <div class="absolute start-0 w-100 h-100 overlay-dark-7 hover-op-1 z-2"></div>
-                    <img src="{{ image('galeria/17.jpg') }}" class="w-100 hover-scale-1-2" alt="">
-                </div>
-            </a>
-        </div>
-        <div class="col-md-4 col-sm-6 col-12 item facilities">
-            <a href="{{ image('galeria/18.jpg') }}" class="image-popup d-block hover">
-                <div class="relative overflow-hidden rounded-1">
-                    <div class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3">
-                        View
-                    </div>
-                    <div class="absolute start-0 w-100 h-100 overlay-dark-7 hover-op-1 z-2"></div>
-                    <img src="{{ image('galeria/18.jpg') }}" class="w-100 hover-scale-1-2" alt="">
+                    <img src="{{ image('galeria/22.jpg') }}" class="w-100 hover-scale-1-2" alt="">
                 </div>
             </a>
         </div>
@@ -301,49 +279,72 @@
             </a>
         </div>
         <div class="col-md-4 col-sm-6 col-12 item interior">
-            <a href="{{ image('galeria/19.jpg') }}" class="image-popup d-block hover">
+            <a href="{{ image('galeria/13.jpg') }}" class="image-popup d-block hover">
                 <div class="relative overflow-hidden rounded-1">
                     <div class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3">
                         View
                     </div>
                     <div class="absolute start-0 w-100 h-100 overlay-dark-7 hover-op-1 z-2"></div>
-                    <img src="{{ image('galeria/19.jpg') }}" class="w-100 hover-scale-1-2" alt="">
+                    <img src="{{ image('galeria/13.jpg') }}" class="w-100 hover-scale-1-2" alt="">
                 </div>
             </a>
         </div>
         <div class="col-md-4 col-sm-6 col-12 item interior">
-            <a href="{{ image('galeria/20.jpg') }}" class="image-popup d-block hover">
+            <a href="{{ image('galeria/14.jpg') }}" class="image-popup d-block hover">
                 <div class="relative overflow-hidden rounded-1">
                     <div class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3">
                         View
                     </div>
                     <div class="absolute start-0 w-100 h-100 overlay-dark-7 hover-op-1 z-2"></div>
-                    <img src="{{ image('galeria/20.jpg') }}" class="w-100 hover-scale-1-2" alt="">
+                    <img src="{{ image('galeria/14.jpg') }}" class="w-100 hover-scale-1-2" alt="">
                 </div>
             </a>
         </div>
         <div class="col-md-4 col-sm-6 col-12 item interior">
-            <a href="{{ image('galeria/21.jpg') }}" class="image-popup d-block hover">
+            <a href="{{ image('galeria/15.jpg') }}" class="image-popup d-block hover">
                 <div class="relative overflow-hidden rounded-1">
                     <div class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3">
                         View
                     </div>
                     <div class="absolute start-0 w-100 h-100 overlay-dark-7 hover-op-1 z-2"></div>
-                    <img src="{{ image('galeria/21.jpg') }}" class="w-100 hover-scale-1-2" alt="">
+                    <img src="{{ image('galeria/15.jpg') }}" class="w-100 hover-scale-1-2" alt="">
                 </div>
             </a>
         </div>
         <div class="col-md-4 col-sm-6 col-12 item interior">
-            <a href="{{ image('galeria/22.jpg') }}" class="image-popup d-block hover">
+            <a href="{{ image('galeria/16.jpg') }}" class="image-popup d-block hover">
                 <div class="relative overflow-hidden rounded-1">
                     <div class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3">
                         View
                     </div>
                     <div class="absolute start-0 w-100 h-100 overlay-dark-7 hover-op-1 z-2"></div>
-                    <img src="{{ image('galeria/22.jpg') }}" class="w-100 hover-scale-1-2" alt="">
+                    <img src="{{ image('galeria/16.jpg') }}" class="w-100 hover-scale-1-2" alt="">
                 </div>
             </a>
         </div>
+        <div class="col-md-4 col-sm-6 col-12 item interior">
+            <a href="{{ image('galeria/17.jpg') }}" class="image-popup d-block hover">
+                <div class="relative overflow-hidden rounded-1">
+                    <div class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3">
+                        View
+                    </div>
+                    <div class="absolute start-0 w-100 h-100 overlay-dark-7 hover-op-1 z-2"></div>
+                    <img src="{{ image('galeria/17.jpg') }}" class="w-100 hover-scale-1-2" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 item interior">
+            <a href="{{ image('galeria/18.jpg') }}" class="image-popup d-block hover">
+                <div class="relative overflow-hidden rounded-1">
+                    <div class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3">
+                        View
+                    </div>
+                    <div class="absolute start-0 w-100 h-100 overlay-dark-7 hover-op-1 z-2"></div>
+                    <img src="{{ image('galeria/18.jpg') }}" class="w-100 hover-scale-1-2" alt="">
+                </div>
+            </a>
+        </div>
+        
 
 
 

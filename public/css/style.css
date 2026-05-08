@@ -6402,6 +6402,10 @@ object {
   background: #555;
 }
 
+.btn-primary:focus {
+  background: var(--primary-color);
+}
+
 .img-responsive {
   display: inline-block;
 }

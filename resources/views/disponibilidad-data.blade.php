@@ -85,6 +85,33 @@ $('#meses_sin_intereses').prop('disabled', true);
 <div id="plans" style="@if(empty($unit)) display:none; @endif background-color: #681a0e;">
     <h1 style="text-align: center; padding-top: 36px; color:#967754; font-weight: 500; font-size: 2.5rem !important;" >POLÍTICAS DE PAGO</h1>
     @include("full-listing-template::plans")
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <button class="btn btn-primary" id="btn-consulta" style="margin-top: 36px; margin-bottom: 36px;" onclick="$('#tabla_pagos').toggle();">
+            Ver tabla de pagos
+        </button>
+
+        <table id="tabla_pagos" style="display: none; border-collapse: collapse; width: 100%; max-width: 700px; margin-bottom: 36px; color: #f5e6d0;">
+            <thead>
+              <tr style="background-color: #967754; color: #1a0a04;">
+                <th style="padding: 12px 20px; text-align: center; font-weight: 600; letter-spacing: 0.05em;">Mes</th>
+                <th style="padding: 12px 20px; text-align: right; font-weight: 600; letter-spacing: 0.05em;">Saldo al inicio</th>
+                <th style="padding: 12px 20px; text-align: right; font-weight: 600; letter-spacing: 0.05em;">Pago</th>
+                <th style="padding: 12px 20px; text-align: right; font-weight: 600; letter-spacing: 0.05em;">Saldo al final</th>
+              </tr>
+            </thead>
+            <tbody id="pagos">
+
+            </tbody>
+        </table>
+        <style>
+          #tabla_pagos tbody tr:nth-child(odd)  { background-color: rgba(150,119,84,0.15); }
+          #tabla_pagos tbody tr:nth-child(even) { background-color: rgba(150,119,84,0.05); }
+          #tabla_pagos tbody tr:hover           { background-color: rgba(150,119,84,0.30); }
+          #tabla_pagos tbody td                 { padding: 10px 20px; text-align: right; border-bottom: 1px solid rgba(150,119,84,0.2); }
+          #tabla_pagos tbody td:first-child     { text-align: center; }
+        </style>
+    </div>
+    
 </div>
 
 @if(isset($imp))

@@ -102,7 +102,31 @@
             $('#fill_mensuality_plazo').set_money($('#fill_plazo').get_number()/mensualidades_plazo);
             $('#fill_total-price-personalized').set_money(pago);
         }
+        var meses = $('#fill_months_plazo').get_number();
+        var mensualidad = $('#fill_mensuality_plazo').get_number();
+        var plazo = $('#fill_plazo').get_number();
+        $('#pagos').empty();
+        for(var i = 0; i < meses; i++){
+            var fecha = mesYAnioDesdeHoy(i+1);
+            
+            var line = `<tr>
+            <td>`+fecha+`</td>
+            <td>$`+plazo.toLocaleString('en-US')+`</td>
+            <td>$`+mensualidad.toLocaleString('en-US')+`</td>
+            <td>$`+(meses==i+1?0:plazo-mensualidad).toLocaleString('en-US')+`</td>
+            <tr>`;
+            $('#pagos').append(line);
+            plazo -= mensualidad;
+        }
     });
+    function mesYAnioDesdeHoy(n) {
+      const MESES = ['Enero','Febrero','Marzo','Abril','Mayo','Junio',
+                     'Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+      const fecha = new Date();
+      fecha.setDate(1);
+      fecha.setMonth(fecha.getMonth() + n);
+      return `${MESES[fecha.getMonth()]} de ${fecha.getFullYear()}`;
+    }
     function calculateX(w,y, z, L,n,i) {
       const value_normalized = L/z;
       const F1 = Math.pow(i+1,w+n);
