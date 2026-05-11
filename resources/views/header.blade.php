@@ -19,10 +19,10 @@
                                 <div class="de-flex-col">
                                     <div class="de-flex-col header-col-mid">
                                         <ul id="mainmenu">
-                                        
-                                             <li><a class="menu-item" href="#" style="color: #bb9269 !important;">Asesor</a>{{ $asesor }}</li>
+                                            @if(isset($asesor) && isset($client))
+                                            <li><a class="menu-item" href="#" style="color: #bb9269 !important;">Asesor</a>{{ $asesor }}</li>
                                             <li><a class="menu-item"  href="#" style="color: #bb9269 !important;">Cliente</a>{{ $client }}</li>
-                                            
+                                            @endif
                                         </ul>
                                     </div>
                                 </div>
@@ -57,9 +57,13 @@
                         </div>
 
                         <div class="col-lg-4">
-                            @if(!empty($menu))
-                            <a class="btn-main btn-line bg-blur fx-slide" href="{{ route('disponibilidad') }}"><span>Disponibilidad</span></a>&nbsp;
-                            <a class="btn-main btn-line bg-blur fx-slide" href="{{ route('torre') }}"><span>Listado</span></a>
+                            @if(!empty($menu) || !empty($is_open))
+                            <a class="btn-main btn-line bg-blur fx-slide" href="{{ empty($is_open) ? route('disponibilidad') : route('open') }}">
+                                <span>Disponibilidad</span>
+                            </a>&nbsp;
+                            <a class="btn-main btn-line bg-blur fx-slide" href="{{ empty($is_open) ? route('torre') : route('listado')  }}">
+                                <span>Listado</span>
+                            </a>
                             @endif
                         </div>
                     </div>

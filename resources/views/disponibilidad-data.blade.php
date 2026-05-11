@@ -85,6 +85,7 @@ $('#meses_sin_intereses').prop('disabled', true);
 <div id="plans" style="@if(empty($unit)) display:none; @endif background-color: #681a0e;">
     <h1 style="text-align: center; padding-top: 36px; color:#967754; font-weight: 500; font-size: 2.5rem !important;" >POLÍTICAS DE PAGO</h1>
     @include("full-listing-template::plans")
+    @if(!empty($open))
     <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <button class="btn btn-primary" id="btn-consulta" style="margin-top: 36px; margin-bottom: 36px;" onclick="$('#tabla_pagos').toggle();">
             Ver tabla de pagos
@@ -111,7 +112,7 @@ $('#meses_sin_intereses').prop('disabled', true);
           #tabla_pagos tbody td:first-child     { text-align: center; }
         </style>
     </div>
-    
+    @endif
 </div>
 
 @if(isset($imp))

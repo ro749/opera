@@ -7,4 +7,5 @@ return [
         ]
     ],
     'ulpoadcvs'=>true,
+    'open'=>true,
 ];
