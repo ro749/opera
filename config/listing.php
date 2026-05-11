@@ -6,4 +6,5 @@ return [
             'plan_override'=>App\Plans\PersonalPlan::class,
         ]
     ],
+    'ulpoadcvs'=>true,
 ];
