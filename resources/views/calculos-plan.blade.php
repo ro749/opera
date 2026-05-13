@@ -22,6 +22,12 @@
         var interes_mensual = $('#fill_interes_mensual').get_number() / 100;
         var mensualidades_plazo = $('#fill_months_plazo').get_number();
         var meses_sin_intereses = $('#fill_meses_sin_intereses').get_number();
+        if(mensualidades_plazo > 0){
+            $("#calendario-pagos").show();
+        }
+        else{
+            $("#calendario-pagos").hide();
+        }
         if(meses_sin_intereses >= mensualidades_plazo && meses_sin_intereses != 0){
             meses_sin_intereses = mensualidades_plazo-1;
             $('#fill_meses_sin_intereses').set_value(meses_sin_intereses);
