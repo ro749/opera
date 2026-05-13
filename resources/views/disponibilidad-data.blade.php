@@ -1,3 +1,16 @@
+<style>
+    @media only screen and (min-width: 992px) {
+        #imagen-unidad{
+            flex-grow: 1; position: relative;
+        }
+    }
+
+    @media only screen and (max-width: 992px) {
+        #imagen-unidad{
+            height: 100vw; position: relative;
+        }
+    }
+</style>
 <div class="responsive-row">
     <div id="checking" style="width:40%;">
         @if(isset($imp))
@@ -64,7 +77,7 @@
                     @endif
                 </div>
             </div>
-            <div id="aki" style="flex-grow: 1; position: relative;">
+            <div id="imagen-unidad">
                 <x-f-image :data="$unit" id="tipo" src="Modelos/Planta/" ext=".jpg" dif="-planta" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 100%; object-fit: cover;"/>
             </div>
         </div>
